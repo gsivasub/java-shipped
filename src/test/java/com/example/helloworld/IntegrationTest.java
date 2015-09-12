@@ -1,7 +1,7 @@
 package com.example.helloworld;
 
 import com.example.helloworld.core.Person;
-import com.example.helloworld.core.Saying;
+import com.example.helloworld.api.Saying;
 import com.google.common.base.Optional;
 import io.dropwizard.testing.ConfigOverride;
 import io.dropwizard.testing.ResourceHelpers;
@@ -55,7 +55,7 @@ public class IntegrationTest {
     @Test
     public void testHelloWorld() throws Exception {
         final Optional<String> name = Optional.fromNullable("Dr. IntegrationTest");
-        final Saying saying = client.target("http://localhost:" + RULE.getLocalPort() + "/")
+        final Saying saying = client.target("http://localhost:" + RULE.getLocalPort() + "/hello-world")
                 .queryParam("name", name.get())
                 .request()
                 .get(Saying.class);

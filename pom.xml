@@ -7,14 +7,14 @@
     </prerequisites>
 
     <artifactId>shipped-buildpack-template-dropwizard</artifactId>
-    <version>0.9.0-SNAPSHOT</version>
+    <version>0.9.0-rc4</version>
     <groupId>io.dropwizard</groupId>
     <name>Shipped DropWizard Buildpack Template</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <jersey.version>2.17</jersey.version>
+        <jersey.version>2.21</jersey.version>
         <h2.version>1.4.187</h2.version>
     </properties>
 
